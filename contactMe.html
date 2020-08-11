@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <p>Email: blablabla@address.ad</p>
+  <p>Phone: 111-222-333-444-555</p>
+  <hr>
+  <!--By setting the action = maito, what it does is:it will send an email to
+    the specified email address right after we click on the submit button instead
+    of sending the user back to the main page.
+  By adding the enctype attribute at the end, we remove any weird character when
+submiting the form.-->
+  <form action="mailto:blablabla@gmail.com" method="post" enctype="text/plain">
+    <label>Your name:</label>
+    <input type="text" name="yourName" value=""><br>
+    <label>Email:</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label>Your message:</label><br>
+    <textarea name="yourMessage" rows="8" cols="80"></textarea><br>
+    <input type="submit" name="">
+  </form>
+</body>
+
+</html>
